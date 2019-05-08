@@ -13,7 +13,7 @@ export default class CardComponent extends Component {
           'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus numquam ex aliquid eius quas necessitatibus amet enim, officia ab voluptas dignissimos eligendi voluptatibus recusandae porro earum! Ad quis deserunt illo!',
         type: 'vertical',
         ratio: 5,
-        writer: 'Writer',
+        writer: 'Writer 1',
         thumbnail: '/images/overaction-1.jpg'
       },
       {
@@ -23,7 +23,7 @@ export default class CardComponent extends Component {
           'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus numquam ex aliquid eius quas necessitatibus amet enim, officia ab voluptas dignissimos eligendi voluptatibus recusandae porro earum! Ad quis deserunt illo!',
         type: 'vertical',
         ratio: 3,
-        writer: 'Writer',
+        writer: 'Writer 2',
         thumbnail: '/images/overaction-2.jpg'
       },
       {
@@ -32,7 +32,7 @@ export default class CardComponent extends Component {
         desc: 'test description',
         type: 'vertical',
         ratio: 0,
-        writer: 'Writer',
+        writer: 'Writer 3',
         thumbnail: '/images/overaction-3.jpg'
       },
       {
@@ -41,7 +41,7 @@ export default class CardComponent extends Component {
           'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus numquam ex aliquid eius quas necessitatibus amet enim, officia ab voluptas dignissimos eligendi voluptatibus recusandae porro earum! Ad quis deserunt illo!',
         type: 'horizontal',
         ratio: 1,
-        writer: 'Writer',
+        writer: 'Writer 4',
         thumbnail: '/images/overaction-2.jpg'
       }
     ]

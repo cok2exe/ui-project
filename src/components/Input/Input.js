@@ -24,7 +24,7 @@ export default class Input extends Component {
       <div className="input__wrapper">
         <div
           className={`input ${input.hasButton ? 'has-button' : ''} ${
-            isFocus || input.value.length > 0 ? 'focus' : ''
+            isFocus ? 'focus' : ''
           } ${input.disabled ? 'disabled' : ''} ${
             input.readOnly ? 'read-only' : ''
           }`}

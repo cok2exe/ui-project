@@ -48,6 +48,7 @@ export default class Card extends Component {
             <div className="card__top">
               <span className="card__label">label</span>
               <h4 className="card__title">{card.title}</h4>
+              <div className="card__writer">{card.writer}</div>
             </div>
 
             {card.ratio || card.desc ? (
@@ -107,7 +108,7 @@ export default class Card extends Component {
                 ) : (
                   ''
                 )}
-                <div className="card__writer">Writer</div>
+                <div className="card__writer">{card.writer}</div>
               </div>
             </div>
           </div>

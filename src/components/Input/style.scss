@@ -28,6 +28,7 @@
     border: 1px solid #dddddd;
     border-radius: 5px;
     overflow: hidden;
+    transition: 0.3s;
 
     &.focus {
       border-color: #89cdcf;
@@ -54,6 +55,7 @@
       padding: 10px;
       &:disabled {
         background-color: #f9f9f9;
+        color: #eb5757;
       }
       &:read-only {
         background-color: #f9f9f9;
