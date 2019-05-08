@@ -37,10 +37,14 @@ export default class InputComponent extends Component {
 
   handleChange = e => {
     const state = { ...this.state }
+    const regNum = /^[0-9]*$/
 
     switch (e.target.name) {
       default:
-        state[e.target.name] = e.target.value
+        if (regNum.test(e.target.value)) {
+          let number = e.target.value
+          state[e.target.name] = number
+        }
         break
     }
 
@@ -89,7 +93,7 @@ export default class InputComponent extends Component {
               key={index}
               index={index}
               input={input}
-              maxLength={maxLength}
+              maxLength={+maxLength}
               handleChangeForInput={this.handleChangeForInput}
             />
           )

@@ -15,6 +15,11 @@ export default class Input extends Component {
     const { index, input, maxLength, handleChangeForInput } = this.props
     const { isFocus } = this.state
 
+    let realValue = input.value
+    if (input.value.length > maxLength) {
+      realValue = input.value.slice(0, maxLength)
+    }
+
     return (
       <div className="input__wrapper">
         <div
@@ -30,7 +35,7 @@ export default class Input extends Component {
           <textarea
             id={`input-${index}`}
             name="value"
-            value={input.value}
+            value={realValue}
             disabled={input.disabled}
             readOnly={input.readOnly}
             maxLength={maxLength}
@@ -39,10 +44,10 @@ export default class Input extends Component {
             onChange={e => handleChangeForInput(e, index)}
             placeholder="주문 요청사항을 입력해주세요."
           />
-          <div className="max-length">{maxLength - input.value.length}</div>
+          <div className="max-length">{maxLength - realValue.length}</div>
         </div>
         {input.hasButton ? (
-          <button disabled={!input.value.length}>Save</button>
+          <button disabled={!realValue.length}>Save</button>
         ) : (
           ''
         )}
