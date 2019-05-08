@@ -24,6 +24,10 @@
       width: 100%;
       padding-top: 100%;
       background-color: #eeeeee;
+
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     span {
@@ -44,12 +48,11 @@
       width: 50%;
 
       li {
-        width: calc((100% - 12px) / 5);
+        width: 20%;
         float: left;
-        margin-right: 3px;
         font-size: 0;
 
-        &.active button {
+        &.active button span {
           background-color: #fdc630;
         }
 
@@ -58,12 +61,24 @@
         }
 
         button {
+          padding: 0 2.5px;
           width: 100%;
-          padding: 100% 0 0;
-          border: none;
-          border-radius: 50%;
-          outline: none;
-          background-color: #eeeeee;
+          height: 100%;
+          border: 0;
+          font-size: 0;
+          background-color: transparent;
+
+          span {
+            width: 100%;
+            padding: 100% 0 0;
+            border: none;
+            border-radius: 50%;
+            outline: none;
+            background-color: #eeeeee;
+            font-size: 0;
+            display: inline-block;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -94,12 +109,12 @@
       }
 
       .card__thumbnail {
-        width: 40%;
-        padding-top: 40%;
+        width: 45%;
+        padding-top: 45%;
       }
 
       .card__content {
-        width: 60%;
+        width: 55%;
         padding: 10px;
 
         p.card__desc {
@@ -121,6 +136,7 @@
 
           ul {
             margin-bottom: 0;
+            width: calc(55% - 5px);
           }
 
           .card__writer {
@@ -128,7 +144,47 @@
             padding-left: 5px;
             border-left: 1px solid #dddddd;
             color: #dddddd;
+
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 45%;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .section-card {
+    .card {
+      &--horizontal {
+        .card__content {
+          p.card__desc {
+            height: calc(17px * 2);
+            -webkit-line-clamp: 2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .section-card {
+    .card {
+      &-wrapper {
+        float: none;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &.vertical,
+        &.horizontal {
+          width: 100%;
         }
       }
     }

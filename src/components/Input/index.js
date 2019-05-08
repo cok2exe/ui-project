@@ -21,13 +21,13 @@ export default class InputComponent extends Component {
         hasButton: true
       },
       {
-        value: '',
+        value: 'Disabled 확인 용 입력 폼',
         disabled: true,
         readOnly: false,
         hasButton: false
       },
       {
-        value: '',
+        value: 'ReadOnly 확인 용 입력 폼',
         disabled: false,
         readOnly: true,
         hasButton: false
@@ -70,18 +70,20 @@ export default class InputComponent extends Component {
 
     return (
       <div className="section-input">
-        <label className="hidden" htmlFor="max-length">
-          최대 길이를 입력해주세요.
-        </label>
-        <input
-          type="text"
-          id="max-length"
-          name="_maxLength"
-          value={_maxLength}
-          onChange={this.handleChange}
-          placeholder="최대 길이 설정"
-        />
-        <button onClick={this.setMaxLength}>Set</button>
+        <div className="maxlength-test">
+          <label className="hidden" htmlFor="max-length">
+            최대 길이를 입력해주세요.
+          </label>
+          <input
+            type="text"
+            id="max-length"
+            name="_maxLength"
+            value={_maxLength}
+            onChange={this.handleChange}
+            placeholder="최대 길이 설정"
+          />
+          <button onClick={this.setMaxLength}>Set</button>
+        </div>
 
         {inputs.map((input, index) => {
           return (

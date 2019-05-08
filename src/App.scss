@@ -1,14 +1,24 @@
 * {
   box-sizing: border-box;
+  font-family: Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo', sans-serif;
+}
+
+body {
+  margin: 0 20px 20px;
 }
 
 *:disabled {
   cursor: not-allowed !important;
 }
 
+button {
+  &:focus {
+    outline: 0;
+  }
+}
+
 .main-body {
   width: 100%;
-  max-width: 1080px;
   margin: 0 auto;
 
   ul.main-tabs {
@@ -24,6 +34,21 @@
       padding: 20px 0;
       width: 250px;
       text-align: center;
+      border-bottom: 2px solid transparent;
+
+      &.active {
+        border-bottom: 2px solid #89cdcf;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    ul.main-tabs {
+      width: 100%;
+
+      li {
+        width: 50%;
+      }
     }
   }
 }
