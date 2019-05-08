@@ -29,12 +29,8 @@ export default class Card extends Component {
       target = card.ratio
     }
 
-    for (let i = 0; i < target; i++) {
-      stars.push('active')
-    }
-
-    for (let j = 0; j < 5 - target; j++) {
-      stars.push('')
+    for (let i = 0; i < 5; i++) {
+      stars.push(target > i ? 'active' : '')
     }
 
     return (

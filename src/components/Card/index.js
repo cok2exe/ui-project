@@ -14,7 +14,7 @@ export default class CardComponent extends Component {
         type: 'vertical',
         ratio: 5,
         writer: 'Writer 1',
-        thumbnail: '/images/overaction-1.jpg'
+        thumbnail: '/images/cat.jpg'
       },
       {
         title: 'Card 2',
@@ -24,7 +24,7 @@ export default class CardComponent extends Component {
         type: 'vertical',
         ratio: 3,
         writer: 'Writer 2',
-        thumbnail: '/images/overaction-2.jpg'
+        thumbnail: '/images/cat.jpg'
       },
       {
         title: 'Card 3',
@@ -33,7 +33,7 @@ export default class CardComponent extends Component {
         type: 'vertical',
         ratio: 0,
         writer: 'Writer 3',
-        thumbnail: '/images/overaction-3.jpg'
+        thumbnail: '/images/cat.jpg'
       },
       {
         title: 'Card 4',
@@ -42,7 +42,7 @@ export default class CardComponent extends Component {
         type: 'horizontal',
         ratio: 1,
         writer: 'Writer 4',
-        thumbnail: '/images/overaction-2.jpg'
+        thumbnail: '/images/cat.jpg'
       }
     ]
   }
