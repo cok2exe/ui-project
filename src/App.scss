@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+*:disabled {
+  cursor: not-allowed !important;
+}
+
+.main-body {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+
+  ul.main-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 30px;
+    width: 500px;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      padding: 20px 0;
+      width: 250px;
+      text-align: center;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

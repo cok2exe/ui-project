@@ -1,0 +1,136 @@
+.section-card {
+  overflow: hidden;
+  margin: 0 -5px;
+
+  .card {
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+
+    &-wrapper {
+      float: left;
+      padding: 0 5px;
+
+      &.vertical {
+        width: 20%;
+      }
+
+      &.horizontal {
+        width: 40%;
+      }
+    }
+
+    &__thumbnail {
+      width: 100%;
+      padding-top: 100%;
+      background-color: #eeeeee;
+    }
+
+    span {
+      display: block;
+      font-size: 14px;
+      color: #dddddd;
+    }
+
+    h4 {
+      margin: 10px 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 5px 5px 0;
+      overflow: hidden;
+      width: 50%;
+
+      li {
+        width: calc((100% - 12px) / 5);
+        float: left;
+        margin-right: 3px;
+        font-size: 0;
+
+        &.active button {
+          background-color: #fdc630;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        button {
+          width: 100%;
+          padding: 100% 0 0;
+          border: none;
+          border-radius: 50%;
+          outline: none;
+          background-color: #eeeeee;
+        }
+      }
+    }
+
+    p {
+      margin: 0;
+      line-height: 17px;
+      height: 17px;
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__top {
+      padding: 10px;
+    }
+
+    &__footer {
+      padding: 10px;
+      border-top: 1px solid #dddddd;
+    }
+
+    &--horizontal {
+      & > * {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .card__thumbnail {
+        width: 40%;
+        padding-top: 40%;
+      }
+
+      .card__content {
+        width: 60%;
+        padding: 10px;
+
+        p.card__desc {
+          height: calc(17px * 3);
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          word-wrap: break-word;
+          white-space: normal;
+        }
+
+        &__bottom {
+          margin-top: 20px;
+
+          & > * {
+            display: inline-block;
+            vertical-align: middle;
+          }
+
+          ul {
+            margin-bottom: 0;
+          }
+
+          .card__writer {
+            font-size: 14px;
+            padding-left: 5px;
+            border-left: 1px solid #dddddd;
+            color: #dddddd;
+          }
+        }
+      }
+    }
+  }
+}
