@@ -167,6 +167,11 @@
           }
         }
       }
+
+      ul {
+        width: 70%;
+        max-width: 300px;
+      }
     }
   }
 }
@@ -185,6 +190,15 @@
         &.vertical,
         &.horizontal {
           width: 100%;
+        }
+      }
+
+      ul {
+        margin-bottom: 1.388vw;
+        li {
+          button {
+            padding: 0 0.694vw;
+          }
         }
       }
     }
