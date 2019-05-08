@@ -33,6 +33,7 @@ export default class Input extends Component {
             value={input.value}
             disabled={input.disabled}
             readOnly={input.readOnly}
+            maxLength={maxLength}
             onFocus={() => this.focusTextarea(true)}
             onBlur={() => this.focusTextarea(false)}
             onChange={e => handleChangeForInput(e, index)}

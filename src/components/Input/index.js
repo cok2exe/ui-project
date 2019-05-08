@@ -71,9 +71,7 @@ export default class InputComponent extends Component {
     return (
       <div className="section-input">
         <div className="maxlength-test">
-          <label className="hidden" htmlFor="max-length">
-            최대 길이를 입력해주세요.
-          </label>
+          <label htmlFor="max-length">최대 길이 설정: </label>
           <input
             type="text"
             id="max-length"

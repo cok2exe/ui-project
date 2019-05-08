@@ -5,6 +5,12 @@
       height: 28px;
       border-radius: 3px;
     }
+
+    label {
+      margin-right: 5px;
+      font-size: 12px;
+    }
+
     input {
       box-shadow: none;
       outline: 0;
@@ -83,6 +89,7 @@
         outline: 0;
         cursor: pointer;
         color: #89cdcf;
+        background-color: #ffffff;
 
         &:disabled {
           color: #dddddd;
